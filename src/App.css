@@ -1,0 +1,19 @@
+li:hover{
+  font-size: 18px;
+}
+.card{
+  border:2px solid #220e0e;
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 10px rgb(21, 19, 19);
+  text-align: center;
+  display: inline-block;
+}
+img{
+  border-radius: 400px;
+  width:200px;
+  height: 200px;
+  object-fit: cover;
+}
