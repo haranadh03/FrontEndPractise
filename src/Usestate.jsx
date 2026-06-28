@@ -1,4 +1,5 @@
 import { useState } from "react"
+import 'animate.css';
 
 function Usestate(){
     const [count, setCount]=useState(0)
@@ -16,7 +17,9 @@ function Usestate(){
     }
     return(
         <>  
-            <h1>{count}</h1>
+            <h1 className="animate__animated animate__swing">
+                {count}
+            </h1>
             <button onClick={handle1}>Click me to add</button>
             <button onClick={handle2}>Click me to delete</button><br />
             <p> is Employed: {isemployed ? "yes":"no"}</p>
