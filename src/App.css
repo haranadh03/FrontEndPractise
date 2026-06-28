@@ -1,6 +1,4 @@
-li:hover{
-  font-size: 18px;
-}
+
 .card{
   border:2px solid #220e0e;
   width: 300px;
@@ -16,4 +14,17 @@ img{
   width:200px;
   height: 200px;
   object-fit: cover;
+}
+.dontdisturb{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.dontdisturb li{
+    transition: transform 0.3s ease-in-out;
+}
+
+.dontdisturb li:hover{
+    transform: scale(1.1);
 }

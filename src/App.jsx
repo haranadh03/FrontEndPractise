@@ -8,6 +8,7 @@ import Button from './Button.jsx'
 import Profile from './profilepicture.jsx'
 import Usestate from './Usestate.jsx';
 import 'animate.css'
+import MyComponent from './MyComponent.jsx';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       <User isLoggedIn={true} name='hari'></User>
       <Button></Button><br />
       <Profile></Profile>
-      <Usestate />
+      <Usestate /><br />
+      <MyComponent/>
     </>
   )
 }
