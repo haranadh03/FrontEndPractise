@@ -13,6 +13,7 @@ import Usestate from './Usestate.jsx';
 import 'animate.css'
 import MyComponent from './MyComponent.jsx';
 import ColourPicker from './ColourPicker.jsx';
+import Updater from './Updater.jsx'
 
 function App() {
   useEffect(() => {
@@ -25,14 +26,13 @@ function App() {
       <div className='hari'>
       <Header></Header>
       <Student name="haranadh" age={23}></Student>
-      <Student/>
       <div className="animate__animated animate__backInRight">
       <Card ></Card>
       </div>
       <div className='animate__animated animate__backInRight'>
       <Card></Card>
       </div>
-      <User isLoggedIn={true} name='hari'></User>
+      <User isLoggedIn={false} name='Haranadh'></User>
       <Button></Button><br />
       <div  data-aos="flip-right">
       <Profile/>
@@ -40,6 +40,7 @@ function App() {
       <Usestate /><br />
       <MyComponent/>
       <ColourPicker/>
+      <Updater/>
       </div>
     </>
   )

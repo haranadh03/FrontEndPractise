@@ -51,3 +51,15 @@ img{
   width: 80px;
   border-radius:10px;
 }
+button{
+  height:50px;
+  width:80px;
+  background-color:rgb(15, 62, 62);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  transition: 0.7ms;
+}
+.lalal{
+  display: flex;
+}
