@@ -14,7 +14,7 @@ function ColourPicker(){
                     <p>selected Color:{colour}</p>
                 </div>
                 <label>select a color</label>
-                <input type="color" value={colour} onChange={onClick} className="Color"/>
+                <input type="color" value={colour} onChange={onClick} className="colorI"/>
             </div>
         </>
     );
