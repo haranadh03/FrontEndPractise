@@ -28,3 +28,16 @@ img{
 .dontdisturb li:hover{
     transform: scale(1.1);
 }
+.color-picker-container{
+  width:400px;
+  height:400px;
+  border:5px solid #220e0e;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Color{
+  height:50px;
+  width:50px;
+}

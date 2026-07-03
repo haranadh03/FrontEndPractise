@@ -1,3 +1,6 @@
+import {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from './Header';
 import Card from './Card'
 import './App.css';
@@ -9,10 +12,17 @@ import Profile from './profilepicture.jsx'
 import Usestate from './Usestate.jsx';
 import 'animate.css'
 import MyComponent from './MyComponent.jsx';
+import ColourPicker from './ColourPicker.jsx';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    });
+  }, []);
   return (
     <>
+      <div className='hari'>
       <Header></Header>
       <Student name="haranadh" age={23}></Student>
       <Student/>
@@ -24,9 +34,13 @@ function App() {
       </div>
       <User isLoggedIn={true} name='hari'></User>
       <Button></Button><br />
-      <Profile></Profile>
+      <div  data-aos="flip-right">
+      <Profile/>
+      </div>
       <Usestate /><br />
       <MyComponent/>
+      <ColourPicker/>
+      </div>
     </>
   )
 }
