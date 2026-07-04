@@ -3,6 +3,11 @@ function Cars(){
     const [car, setCar]=useState({year: 2024,
                                     make: "ford", 
                                     model:"mustang"});
+    const [foods, setFoods]=useState(["Apple","Orange","banana"]);
+    function addfood(event){
+        const newfood=document.getElementById("food").value;
+        setFoods([...foods, newfood])
+    }
     function onclick(event){
           setCar(c => ({...c, year:event.target.value}))      
     }
@@ -17,6 +22,12 @@ function Cars(){
             <input type="text" value={car.make} onChange={onhandlemake}/><br />
             <input type="text" value={car.model} onChange={onhandlemodel}/><br />
             <p>your favourate car is {car.make} {car.model} {car.year}</p>
+            <h2>Food items</h2>
+            <ul>
+                {foods.map((foods, index) => <li>{foods}</li>)}
+                <input type="text" placeholder="Enterfoodname"/>
+                <button onClick={addfood} id="food">add newfood</button>
+            </ul>
     </>)    
 
 }
